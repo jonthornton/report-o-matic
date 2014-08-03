@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h1>Report-o-Matic</h1>
+
+    {% if form.errors %}
+        <ul class="errors">
+            {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+                {% for error in field_errors %}
+                    <li>{{ form[field_name].label }}: {{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form action="" method="post">
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=80) }}
+        </p>
+        <p>
+            {{ form.score.label }}<br>
+            {{ form.score() }}
+        </p>
+        <p>
+            {{ form.hidden_tag() }}
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+
+{% endblock %}

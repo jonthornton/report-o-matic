@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h1>Report-o-Matic</h1>
+
+    <p><strong>{{ form.name.data }}</strong> is a <strong>{{ describe_score(form.score.data) }}</strong> programmer.</p>
+
+    <p><a href="{{ url_for('report_form') }}">Back</a></p>
+{% endblock %}
