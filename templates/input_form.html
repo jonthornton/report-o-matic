@@ -15,12 +15,106 @@
     <form action="" method="post">
         <p>
             {{ form.name.label }}<br>
-            {{ form.name(size=80) }}
+            {{ form.name() }}
         </p>
+        <p>
+            {{ form.birthday.label }}<br>
+            {{ form.birthday() }}
+        </p>
+        <p>
+            {{ form.school.label }}<br>
+            {{ form.school() }}
+        </p>
+        <p>
+            {{ form.grade.label }}<br>
+            {{ form.grade() }}
+        </p>
+        <p>
+            {{ form.examiner.label }}<br>
+            {{ form.examiner() }}
+        </p>
+
+{#
+
         <p>
             {{ form.score.label }}<br>
             {{ form.score() }}
         </p>
+        <p>
+            {{ form.vci.label }}<br>
+            {{ form.vci() }}
+        </p>
+        <p>
+            {{ form.vci_percentile.label }}<br>
+            {{ form.vci_percentile() }}
+        </p>
+        <p>
+            {{ form.similarities.label }}<br>
+            {{ form.similarities() }}
+        </p>
+        <p>
+            {{ form.vocabulary.label }}<br>
+            {{ form.vocabulary() }}
+        </p>
+        <p>
+            {{ form.comprehension.label }}<br>
+            {{ form.comprehension() }}
+        </p>
+        <p>
+            {{ form.pri.label }}<br>
+            {{ form.pri() }}
+
+        </p>
+        <p>
+            {{ form.pri_percentile.label }}<br>
+            {{ form.pri_percentile() }}
+        </p>
+        <p>
+            {{ form.block_design.label }}<br>
+            {{ form.block_design() }}
+        </p>
+        <p>
+            {{ form.picture_concepts.label }}<br>
+            {{ form.picture_concepts() }}
+        </p>
+        <p>
+            {{ form.matrix_reasoning.label }}<br>
+            {{ form.matrix_reasoning() }}
+        </p>
+        <p>
+            {{ form.wmi.label }}<br>
+            {{ form.wmi() }}
+        </p>
+        <p>
+            {{ form.wmi_percentile.label }}<br>
+            {{ form.wmi_percentile() }}
+        </p>
+        <p>
+            {{ form.digit_span.label }}<br>
+            {{ form.digit_span() }}
+        </p>
+        <p>
+            {{ form.letter_number_sequencing.label }}<br>
+            {{ form.letter_number_sequencing() }}
+        </p>
+        <p>
+            {{ form.psi.label}}<br>
+            {{ form.psi() }}
+        </p>
+        <p>
+            {{ form.psi_percentile.label }}<br>
+            {{ form.psi_percentile() }}
+
+        </p>
+        <p>
+            {{ form.coding.label }}<br>
+            {{ form.coding() }}
+        </p>
+        <p>
+            {{ form.symbol_search.label }}<br>
+            {{ form.symbol_search() }}
+        </p>
+#}
         <p>
             {{ form.hidden_tag() }}
             <button type="submit">Submit</button>

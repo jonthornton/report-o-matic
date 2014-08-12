@@ -10,3 +10,4 @@ dist
 _mailinglist
 .tox
 settings.cfg
+*.sublime-*
